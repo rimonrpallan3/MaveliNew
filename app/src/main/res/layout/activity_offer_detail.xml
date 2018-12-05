@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/loading_icon_manage" android:id="@+id/loading"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/content_offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/mScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                tools:context="com.mavelinetworks.apps.appname.activities.MainActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/defaultColor">
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minHeight="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/def_logo" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/distanceView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorAccent"
+                                    android:clickable="true"
+                                    android:paddingBottom="18dp"
+                                    android:paddingStart="25dp"
+                                    android:paddingEnd="25dp"
+                                    android:paddingTop="18dp"
+                                    android:text="500 Km"
+                                    android:textColor="@color/defaultColor"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/priceView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimary"
+                                    android:clickable="true"
+                                    android:paddingBottom="18dp"
+                                    android:paddingStart="25dp"
+                                    android:paddingEnd="25dp"
+                                    android:paddingTop="18dp"
+                                    android:text="500 Km"
+                                    android:textColor="@color/defaultColor"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detailOffer"
+                            android:textColor="@color/defaultColorText"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:id="@+id/detail_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:autoLink="web"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/offer_up_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <!--<cn.iwgang.countdownview.CountdownView-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:id="@+id/cv_countdownViewTest1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:isHideTimeBackground="true"-->
+                            <!--app:isShowDay="true"-->
+                            <!--app:isShowHour="true"-->
+                            <!--app:isShowMinute="true"-->
+                            <!--app:timeTextColor="@color/colorPrimary"-->
+                            <!--app:timeTextSize="22sp"-->
+                            <!--app:isTimeTextBold="true"-->
+                            <!--app:suffixGravity="bottom"-->
+                            <!--app:suffixTextColor="@color/defaultColorText"-->
+                            <!--app:suffixTextSize="12sp"-->
+                            <!--app:suffixDay="D"-->
+                            <!--app:suffixHour="H"-->
+                            <!--app:suffixMinute="M" />-->
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:textAlignment="viewStart"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/storeBtnLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/storeBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.gms.ads.AdView
+                            android:id="@+id/adView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            ads:adSize="SMART_BANNER"
+                            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/include_layout_mange_error" android:id="@+id/error"/>
+    <include layout="@layout/include_layout_mange_empty_discussion" android:id="@+id/empty"/>
+
+
+</LinearLayout>

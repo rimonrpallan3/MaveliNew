@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/content_my_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/toolbar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include android:id="@+id/app_bar" layout="@layout/app_bar" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/nav_container"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/main_container"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_below="@id/main_container"
+                        android:gravity="center"
+                        android:layout_alignBottom="@id/content_my_store"
+                        android:id="@+id/ads"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.gms.ads.AdView
+                            android:id="@+id/adView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            ads:adSize="BANNER"
+                            ads:adUnitId="@string/banner_ad_unit_id">
+                        </com.google.android.gms.ads.AdView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <include layout="@layout/loading_icon_manage" android:id="@+id/loading"/>
+
+    <!--<include layout="@layout/loading_icon_manage" android:id="@+id/loading"/>-->
+    <include layout="@layout/fragment_error_manage" android:id="@+id/error"/>
+    <include layout="@layout/fragment_empty_list_manage" android:id="@+id/empty"/>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginTop="25dp"
+            android:stepSize="1"
+            android:progressDrawable="@drawable/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/ratingBar"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Review : "
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+       <EditText
+           android:hint="Write your review"
+           android:id="@+id/reviews"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:minHeight="100dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:id="@+id/required_name"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:id="@+id/reviewer"
+            android:hint="Enter your name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+                <Button
+
+                    android:textColor="@color/defaultColor"
+                    android:textStyle="bold"
+                    android:text="Add review"
+                    android:background="@drawable/userbuttonstyle"
+                    android:id="@+id/ok"
+                    android:layout_weight=".50"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:textColor="@color/defaultColor"
+                    android:textStyle="bold"
+                    android:text="Cancel"
+                    android:background="@drawable/userbuttonstyle"
+                    android:id="@+id/cancel"
+                    android:layout_weight=".50"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

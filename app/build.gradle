@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.mavelinetworks.mavelideals"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 30
+        versionName '1.1'
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        vectorDrawables.useSupportLibrary = true
+    }
+    dexOptions { javaMaxHeapSize "4g" }
+    buildTypes {
+
+    }
+    productFlavors {
+    }
+
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+repositories {
+    jcenter()
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+
+repositories {
+
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url "https://maven.google.com" // Google's Maven repository
+    }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+    maven { url 'https://maven.fabric.io/public' }
+
+    google()
+}
+
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.android.gms:play-services-location:12.0.1'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:12.0.1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.traex.rippleeffect:library:1.3'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.zzz40500:AndroidSweetSheet:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'net.steamcrafted:materialiconlib:1.0.7'
+    implementation 'com.github.nirhart:parallaxscroll:1.0'
+    implementation 'com.github.rey5137:material:1.2.4'
+    implementation 'com.kyleduo.switchbutton:library:1.4.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.github.frank-zhu:pullzoomview:1.0.0'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.0'
+    implementation 'com.flyco.dialog:FlycoDialog_Lib:1.2.2@aar'
+    implementation 'com.flyco.animation:FlycoAnimation_Lib:1.0.0@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.google.firebase:firebase-ads:12.0.1'
+    implementation 'com.google.firebase:firebase-messaging:12.0.1'
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.google.firebase:firebase-auth:12.0.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    /*implementation 'com.thefinestartist:finestwebview:1.2.7'*/
+    implementation 'com.github.hzw1199:AwesomeWebView-Android:1.1'
+    //testCompile 'junit:junit:4.12'
+    //new libs from Droideve
+    implementation group: 'com.github.siyamed', name: 'android-shape-imageview', version: '0.9.3'
+    implementation 'org.bluecabin.textoo:textoo:1.0.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //websocket libs
+//    implementation('io.socket:socket.io-client:0.7.0') {
+//        // excluding org.json which is provided by Android
+//        exclude group: 'org.json', module: 'json'
+//    }
+    //compile 'com.github.nkzawa:socket.io-client:0.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp-ws:3.4.1'
+    implementation 'com.mikepenz:actionitembadge:3.3.1@aar'
+    implementation 'com.mikepenz:iconics-core:2.8.1@aar'
+    implementation 'com.mikepenz:fontawesome-typeface:4.6.0.2@aar'
+    implementation 'com.mikepenz:google-material-typeface:3.0.1.1.original@aar'
+    implementation 'com.mikepenz:community-material-typeface:2.0.46.1@aar'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.norbsoft.typefacehelper:library:0.9.0'
+    implementation 'com.github.techery:properratingbar:0.0.5'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp-ws:3.4.1'
+    implementation 'pub.devrel:easypermissions:1.1.1'
+
+    // compile 'com.github.iwgang:countdownview:2.1.6'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.4.4'
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+
+
+
+//
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.mikhaellopez:hfrecyclerview:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'
+
+
+
+
+

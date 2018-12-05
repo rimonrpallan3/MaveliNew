@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Android Api Key  -->
+    <string name="ANDROID_API_KEY">8ad480c3706f4e573330f43877e5d27e</string>
+
+    <!-- BASE API URL (PLEASE SET BASE_URL YOU FIND IT IN YOUR DASHBOARD -> APPLICATION -> [APP CLIENT API]) -->
+    <string name="BASE_URL">http://10.1.1.18/maveli/index.php/api</string>
+    <string name="BASE_URL_API"> http://10.1.1.18/maveli/index.php/api</string>
+
+
+    <string name="TERMS_OF_USE_URL"> http://10.1.1.18/maveli/term_of_uses.html</string>
+    <string name="PRIVACY_POLICY_URL"> http://10.1.1.18/maveli/privacy_policy.html</string>
+
+
+    <!-- APP ADMOB -->
+    <string name="SHOW_ADS">false</string>
+    <string name="SHOW_ADS_IN_HOME">true</string>
+    <string name="SHOW_INTERSTITIAL_ADS_IN_STARTUP">true</string>
+    <string name="SHOW_ADS_IN_STORE">true</string>
+    <string name="SHOW_ADS_IN_EVENT">true</string>
+    <string name="SHOW_ADS_IN_OFFER">true</string>
+
+    <string name="ad_app_id">ca-app-pub-3182239915045123~00000000</string>
+    <!--Your Admob INTERSTITIAL ID-->
+        <string name="ad_interstitial_id">ca-app-pub-1008130037531433/5178619116</string>
+    <!-- Your Admob banner unit ID-->
+    <string name="banner_ad_unit_id">ca-app-pub-1008130037531433/2057152828</string>
+
+    <!--Set your google map key-->
+    <string name="map_api_key">AIzaSyAYE89x0xg9AUUr386ZYcC7lejMfoVYdwQ</string>
+
+    <string name="analytics">UA-116198767-1</string>
+    <!--Set Your Application name-->
+    <string name="app_name">Maveli Deals</string>
+    <!--Set Your Application version -->
+    <string name="app_version">1.0</string>
+
+
+    <!-- CHAT SERVER CONFIG -->
+    <string name="SERVER_ADDRESS_IP">http://deals.maveli.net:80</string>
+    <string name="SOCKET_SERVER_VERSION">1.0</string>
+
+    <!-- APP DESIGN -->
+    <!-- Set your theme color  -->
+   <!-- <item type="color" name="colorPrimary">#E53935</item>
+    <item type="color" name="colorAccent">#F44336</item>
+    <item type="color" name="colorPrimaryDark">#C62828</item>
+    <item type="color" name="colorPromo">#E53935</item>
+    <item type="color" name="colorFeatured">#1565C0</item>
+    <item type="color" name="colorUpcomingEvent">#E65100</item>-->
+
+    <item type="color" name="colorPrimary">#25323f</item>
+    <item type="color" name="colorAccent">#384c5f</item><!--Tab View-->
+    <item type="color" name="colorPrimaryDark">#FF141C23</item><!--outer header_layoutader-->
+    <item type="color" name="colorPromo">#25323f</item>
+    <item type="color" name="iconColor">#ff9003</item>
+    <item type="color" name="colorFeatured">#1565C0</item>
+    <item type="color" name="colorUpcomingEvent">#E65100</item>
+    <item type="color" name="splash_bg">#f3d7a2</item>
+    <item type="color" name="iconDisableColor">#c6c6c6</item>
+
+    <!-- ENABLE CHAT SERVICE -->
+    <string name="ENABLE_CHAT">false</string>
+    <string name="CHAT_WITH_FIREBASE">false</string>
+
+    <!-- DISPLAY MANAGE STORES VIA WEB -->
+    <string name="ENABLE_WEB_DASHBOARD">true</string>
+
+    <!-- DISPLAY RATE US ALERT DIALOG WHEN USE WANT EXIT FROM APP -->
+    <string name="RATE_US_ON_PLAY_STORE_FORCE">false</string>
+
+    <!-- ABOUT -->
+    <string name="ADDRESS_CONTACT">contact@domain.com </string>
+    <string name="PHONE">+212 000 000 000 </string>
+    <string name="ABOUT_CONTENT">NEARBYSTORES is an innovative local business search app with an intelligent search functionality
+        that can help you find different businesses in an area easily. </string>
+
+    <string-array name="tab_names">
+        <item>@string/tab_offers</item>
+        <item>@string/tab_inbox</item>
+        <item>@string/tab_stores</item>
+        <!--<item>@string/tab_events</item>-->
+
+    </string-array>
+
+    <integer-array name="tab_icons">
+        <item>@drawable/ic_sale_orange_18dp</item><!--Offer-->
+        <item>@drawable/ic_store_mall_directory_orange_18dp</item><!--chat-->
+        <item>@drawable/ic_store_mall_directory_orange_18dp</item><!--store-->
+
+        <!--<item>@drawable/ic_store_mall_directory_white_18dp</item>
+        <item>@drawable/ic_sale_white_18dp</item>-->
+        <!--<item>@drawable/ic_event_note_white_18dp</item>-->
+        <!--<item>@drawable/ic_chat_white_18dp</item>-->
+    </integer-array>
+
+    <!-- DON'T CHANGE THAT -->
+    <integer-array name="tab_indexes">
+        <item>-6</item>
+        <item>-5</item>
+        <item>0</item>
+        <!--<item>-4</item>-->
+
+    </integer-array>
+
+
+</resources>

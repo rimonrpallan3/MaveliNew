@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/_18">
+
+    <ImageButton
+        android:id="@+id/ibClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:background="?attr/selectableItemBackground"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20"
+        android:text="@string/signup_page_header"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:paddingLeft="@dimen/_10"
+        android:inputType="text"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@drawable/edittextlayer"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:paddingLeft="@dimen/_10"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@drawable/edittextlayer"
+        />
+
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_10"
+        android:hint="Mobile Number"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@drawable/edittextlayer"
+        />
+
+    <EditText
+        android:id="@+id/etPswd"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:paddingLeft="@dimen/_10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@drawable/edittextlayer"
+        />
+    <EditText
+        android:id="@+id/etConfirmPswd"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:paddingLeft="@dimen/_10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40"
+        android:background="@drawable/edittextlayer"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50"
+        android:layout_marginTop="@dimen/_04"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkTermsAndConductionBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_04"
+            android:layout_marginRight="@dimen/_10"
+            android:buttonTint="@color/colorPrimary"
+            android:shadowColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tvTermsAndCond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10"
+            android:text="@string/signup_term_cond"
+            android:textAlignment="gravity"
+            android:textSize="@dimen/_11" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_width="match_parent"
+        android:background="@drawable/buttonstateslayer2_with_border"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:layout_height="40dp" />
+
+
+
+
+
+
+
+</LinearLayout>

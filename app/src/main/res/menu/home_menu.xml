@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:visible="true"
+        android:id="@+id/map_action"
+        android:title=""
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_google_maps_orange_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/search_icon"
+        android:title=""
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_search_orange_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item_samplebadge"
+        app:actionLayout="@layout/menu_action_item_badge"
+        app:showAsAction="always"
+        android:title="Notifs"/>
+
+
+
+
+
+</menu>

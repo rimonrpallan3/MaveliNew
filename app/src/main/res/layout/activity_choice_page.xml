@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_40"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/_10">
+        <ImageView
+            android:id="@+id/LoginSignInLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/for_splash"
+            android:layout_marginBottom="@dimen/_20"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:text="@string/signIn_btn"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_50"
+            android:layout_marginRight="@dimen/_50"
+            android:layout_height="@dimen/_40"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14"
+            android:background="@drawable/buttonstateslayer2_with_border"
+            android:layout_marginTop="@dimen/_10"
+            android:onClick="btnSignIn"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="@string/signUp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40"
+            android:layout_marginLeft="@dimen/_50"
+            android:layout_marginRight="@dimen/_50"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14"
+            android:background="@drawable/buttonstateslayer2_with_border"
+            android:layout_marginTop="@dimen/_20"
+            android:onClick="btnSignUp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/_20"
+        android:layout_height="@dimen/_20"
+        android:visibility="gone"
+        android:background="@drawable/buttonstateslayer2_with_border2"
+        android:onClick="btnHiddenBtn"
+        />
+
+
+
+</FrameLayout>

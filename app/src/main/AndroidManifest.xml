@@ -1,0 +1,202 @@
+<manifest package="com.mavelinetworks.mavelideals"
+xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+<!-- BroadcastReceiver permission to listen to the network -->
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+
+<!-- Required OpenGL ES 2.0. for Maps V2 -->
+<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+<application
+    android:name="com.mavelinetworks.mavelideals.AppController"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme"
+    android:largeHeap="true"
+    android:supportsRtl="true"
+    tools:replace="android:icon,android:theme">
+
+    <!-- Goolge Maps API Key -->
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/map_api_key0"/>
+
+
+    <service android:name="com.mavelinetworks.mavelideals.push_notification_firebase.FirebaseMessagingService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+    </service>
+    <service android:name="com.mavelinetworks.mavelideals.push_notification_firebase.FirebaseInstanceIDService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+
+    <!--<receiver android:name="com.droideve.apps.nearbystores.alarm_manager.AlarmReceiver" android:process=":remote" />-->
+
+    <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.Translucent" />
+
+
+    <!--<service-->
+        <!--android:name="com.droideve.apps.nearbystoresdebug.dtmessenger.socket.BootService"-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:process=":remote" />-->
+
+    <!--<service-->
+        <!--android:name="com.droideve.apps.nearbystoresdebug.dtmessenger.socket.SocketService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="false"-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:label="@string/app_name">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="new_user_message_notification" />-->
+        <!--</intent-filter>-->
+    <!--</service>-->
+
+
+    <receiver android:name="com.mavelinetworks.mavelideals.dtmessenger.DCMBroadcastReceiver" >
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+        </intent-filter>
+    </receiver>
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.MessengerActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.ReviewsActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.OffersActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.login.LoginPage"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.signuppage.SignupPage"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.loginsignuppage.LoginSignUpPage"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.firstotppage.FirstOTPPage"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.otppagesubmit.SubmitOTPPage"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.profile.ProfilePage"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.ListUsersActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.OfferDetailActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.InboxActivity"
+        android:screenOrientation="portrait" />
+
+    <!--<activity
+        android:name="com.mavelinetworks.mavelideals.activities.MessengerActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.ReviewsActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.OffersActivity"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.ListUsersActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.OfferDetailActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.mavelinetworks.mavelideals.activities.InboxActivity"
+        android:screenOrientation="portrait" />-->
+
+    <activity
+        android:name="com.wuadam.awesomewebview.AwesomeWebViewActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:theme="@style/FinestWebViewTheme.Light" />
+
+
+
+    <activity android:name="com.mavelinetworks.mavelideals.activities.MainActivity" android:screenOrientation="portrait"></activity>
+
+    <activity android:name="com.mavelinetworks.mavelideals.activities.StoreDetailActivity"
+        android:screenOrientation="portrait" />
+
+    <activity android:name="com.mavelinetworks.mavelideals.activities.EventActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.MapDirectionActivity"
+        android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.MapStoresListActivity"
+        android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.MyStoreActivity" android:screenOrientation="portrait"></activity>
+
+    <activity android:name="com.mavelinetworks.mavelideals.activities.AboutActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.ProfileActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.CategoriesActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.ListStoresActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.LoginActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.EventLikedActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.FavoriteStoreActivity"
+        android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.SignupActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.SplashActivity" android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.mavelinetworks.mavelideals.activities.SettingActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.mavelinetworks.mavelideals.activities.SliderActivity" android:screenOrientation="portrait" />
+
+    <activity android:name="com.mavelinetworks.mavelideals.activities.MapMarkerPosition" android:label="@string/title_activity_map_marker_position"></activity>
+</application>
+
+</manifest>

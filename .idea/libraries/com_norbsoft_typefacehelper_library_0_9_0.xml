@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.norbsoft.typefacehelper:library-0.9.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-0.9.0.aar/859be4ada76e303f6eae03b175df8eed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-0.9.0.aar/859be4ada76e303f6eae03b175df8eed/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.norbsoft.typefacehelper/library/0.9.0/9b8adc1b8c34f730a9a1bef0bb75fb08f6812cfd/library-0.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

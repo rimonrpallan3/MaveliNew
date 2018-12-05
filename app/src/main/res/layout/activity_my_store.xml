@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/content_my_store"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/container_no_added"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textColor="@color/defaultColor"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Add your new  store"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="@color/defaultColor"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/userbuttonstyle"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="Ajouter une"
+                android:id="@+id/createbtn"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_added"
+
+
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+
+                        android:id="@+id/__type"
+                        android:layout_marginBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/useredittextstyle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp">
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Pharmacie de garde"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:gravity="right|center_vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/type_status"
+                                android:gravity="right|center"
+                                android:text="Oui"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <com.rey.material.widget.CheckBox
+                                app:cbd_strokeColor="@color/colorPrimary"
+                                android:id="@+id/select_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        android:visibility="gone"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:src="@drawable/defaultlogo"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp" />
+
+                        <LinearLayout
+
+
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_marginStart="5dp"
+                                android:onClick="requestForCameraPermission"
+                                android:textColor="@color/defaultColor"
+                                android:background="@drawable/userbuttonstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="Prendre photo"
+                                android:id="@+id/makeimage"
+                                android:layout_gravity="center_horizontal" />
+
+                            <Button
+                                android:visibility="gone"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/defaultColor"
+                                android:background="@drawable/userbuttonstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="obtenir une image"
+                                android:id="@+id/getImage"
+                                android:layout_gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:drawablePadding="10dp"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/ic_store_grey600_24dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/useredittextstyle"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/name"
+                        android:hint="Le nom de votre pharmacie"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <EditText
+
+                        android:drawablePadding="10dp"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/ic_phone_classic_grey600_24dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/useredittextstyle"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/phone"
+                        android:hint="Téléphone fixe ou mobile"
+                        android:layout_gravity="center_horizontal" />
+
+                    <EditText
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:drawablePadding="10dp"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/ic_store_grey600_24dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/useredittextstyle"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/address"
+                        android:hint="Adresse de votre pharmacie"
+                        android:layout_gravity="center_horizontal" />
+
+
+
+                    <Button
+
+                        android:textColor="@color/defaultColor"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/userbuttonstyle"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:text="Modifier"
+                        android:id="@+id/save"
+                        android:layout_gravity="center_horizontal" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/loading_icon_manage" android:id="@+id/loading"/>
+
+    <include layout="@layout/fragment_error_manage" android:id="@+id/error"/>
+    <include layout="@layout/fragment_empty_list_manage" android:id="@+id/empty"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="color" name="colorGrayDefault">#80000000</item>
+    <item type="color" name="colorWhiteTransparent">#80FFFFFF</item>
+    <item type="color" name="red">#F44336</item>
+
+
+    <!-- End Set your theme color  -->
+
+    <item type="color" name="bg_desc_event">@color/colorGrayDefault</item>
+
+    <item type="color" name="colorWhite">#FFFFFF</item>
+    <item type="color" name="bgimage">#e2e2e2</item>
+    <item type="color" name="gray">#5b5b5a</item>
+    <item type="color" name="colorSale">#e62e04</item>
+    <item type="color" name="colorButtonStateOnPressed">#73bcbcbc</item>
+    <item type="color" name="colorHeighLight">#73bcbcbc</item>
+    <item type="color" name="colorTextError">#F44336</item>
+    <color name="list_item_title">#AAAAAA</color>
+    <color name="list_group_title">#808080</color>
+
+    <color name="gray_field">#808080</color>
+    <color name="black">#000000</color>
+
+    <item type="color" name="youtubecolor">#e62117</item>
+    <item type="color" name="googlepluscolor">#d34836</item>
+    <item type="color" name="googlepluscolorPressed">#c33f2e</item>
+    <item type="color" name="facebookcolor">#3b5998</item>
+    <item type="color" name="facebookcolorPressed">#33508e</item>
+    <item type="color" name="twittercolor">#55acee</item>
+    <item type="color" name="twittercolorPressed">#55acee</item>
+    <item type="color" name="colorActive">#0c6d2e</item>
+    <item type="color" name="colorNoActive">#bc1818</item>
+    <item type="color" name="defaultColor">#ffffff</item>
+    <item type="color" name="defaultColorText">#000</item>
+
+    <item type="color" name="colorPrimaryFocused">#9e9d24</item>
+    <item type="color" name="colorGradientTop">#33000000</item>
+    <item type="color" name="colorGradientBottom">#1A000000</item>
+
+    <item type="color" name="colorBtnGray">#1A000000</item>
+
+    <item type="color" name="toolbarTextColor">#fff</item>
+    <item name="navigationDrawerBackgroundColor" type="color">#fff</item>
+    <item type="color" name="tabsScrollColor">#fff</item>
+    <item type="color" name="TabTitleColor">#fff</item>
+    <item type="color" name="TextColorDefault">#fff</item>
+    <item type="color" name="ButtonOnPressed">#0277BD</item>
+    <item type="color" name="ButtonOnNoPressed">@color/colorPrimary</item>
+    <item type="color" name="lightGrey">#808080</item>
+    <item type="color" name="duskYellow">#ffea00</item>
+    <!-- SwipResfreshColors -->
+    <item type="color" name="srlcolor1">#0D47A1</item>
+    <item type="color" name="srlcolor2">#F44336</item>
+    <item type="color" name="srlcolor3">#1E88E5</item>
+    <item type="color" name="srlcolor4">#000</item>
+
+    <item type="color" name="divider_dark_gray">#e4e1e1</item>
+
+    <color name="black_transparent">#70000000</color>
+
+
+
+</resources>

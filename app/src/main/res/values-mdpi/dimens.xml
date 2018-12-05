@@ -1,0 +1,80 @@
+<resources>
+
+    <dimen name="_0.5">.3dp</dimen>
+    <dimen name="__04">4dp</dimen>
+    <dimen name="_04">4dp</dimen>
+    <dimen name="_06">5dp</dimen>
+    <dimen name="_08">7dp</dimen>
+    <dimen name="_10">9dp</dimen>
+    <dimen name="_12">16dp</dimen>
+    <dimen name="_14">12dp</dimen>
+    <dimen name="_15">13dp</dimen>
+    <dimen name="_16">14dp</dimen>
+    <dimen name="_18">16dp</dimen>
+    <dimen name="_20">19dp</dimen>
+    <dimen name="_24">21dp</dimen>
+    <dimen name="_27">24dp</dimen>
+    <dimen name="_30">26dp</dimen>
+    <dimen name="_40">35dp</dimen>
+    <dimen name="_50">44dp</dimen>
+    <dimen name="_56">49dp</dimen>
+    <dimen name="_60">52dp</dimen>
+    <dimen name="_65">57dp</dimen>
+    <dimen name="_70">61dp</dimen>
+    <dimen name="_80">70dp</dimen>
+    <dimen name="_85">75dp</dimen>
+    <dimen name="_90">79dp</dimen>
+    <dimen name="_100">88dp</dimen>
+    <dimen name="_110">97dp</dimen>
+    <dimen name="_120">106dp</dimen>
+    <dimen name="_145">121dp</dimen>
+    <dimen name="_150">131dp</dimen>
+    <dimen name="_130">114dp</dimen>
+    <dimen name="_160">140dp</dimen>
+    <dimen name="_200">175dp</dimen>
+    <dimen name="_220">195dp</dimen>
+    <dimen name="_300">262dp</dimen>
+    <dimen name="_350">300dp</dimen>
+    <dimen name="_384">334dp</dimen>
+    <dimen name="_400">350dp</dimen>
+    <dimen name="_11">10dp</dimen>
+    <dimen name="_45">40dp</dimen>
+    <dimen name="_250">225dp</dimen>
+    <dimen name="_260">235dp</dimen>
+
+    <dimen name="notification_title">17dp</dimen>
+    <dimen name="notification_sub_title">15dp</dimen>
+    <dimen name="notification_message">14dp</dimen>
+    <dimen name="notification_tick_height">30dp</dimen>
+    <dimen name="notification_tick_width">30dp</dimen>
+
+
+
+    <dimen name="image_resize_toolbar_icon">5dp</dimen>
+
+    <dimen name="gallery_pic_height">88dp</dimen>
+    <dimen name="album_gallery_pic_height">106dp</dimen>
+
+    <dimen name="christmas_splash_circle">110dp</dimen>
+    <dimen name="christmas_splash_santa">115dp</dimen>
+
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- Nofication bar button -->
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+
+
+
+
+</resources>

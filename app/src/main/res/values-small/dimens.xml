@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="comp_avatar">40dp</dimen>
+    <dimen name="comp_avatar_comment">30dp</dimen>
+
+    <dimen name="comp_box_user_action">28dp</dimen>
+    <dimen name="comp_box_user_action_icons">22dp</dimen>
+
+
+    <item name="size_msg_text" type="dimen">14sp</item>
+    <item name="size_msg_textbox" type="dimen">15sp</item>
+
+</resources>

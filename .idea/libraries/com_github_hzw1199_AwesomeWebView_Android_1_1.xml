@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.hzw1199:AwesomeWebView-Android-1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AwesomeWebView-Android-1.1.aar/df11b1d2879e975f3a605ea37d076a26/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AwesomeWebView-Android-1.1.aar/df11b1d2879e975f3a605ea37d076a26/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

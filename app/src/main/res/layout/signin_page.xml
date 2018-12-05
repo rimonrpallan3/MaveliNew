@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_40"
+        android:layout_marginRight="@dimen/_40"
+        android:layout_marginTop="@dimen/_50"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20"
+            android:gravity="center"
+            android:text="@string/signin_page_header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20"
+            android:gravity="center"
+            android:text="@string/signin_page_subHeader"
+            android:textSize="@dimen/_14"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectCountry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40"
+            android:background="@drawable/spinnerlayer"
+            android:paddingLeft="@dimen/_10"
+            android:prompt="@string/otp_spinner_country"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/for_splash"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/edtZipCodeLogin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40"
+                android:layout_marginBottom="@dimen/_08"
+                android:layout_weight="30"
+                android:background="@drawable/edittextlayer"
+                android:clickable="false"
+                android:ellipsize="start"
+                android:gravity="center|left"
+                android:hint="+000"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10"
+                android:singleLine="true"
+                android:textColorHint="@color/colorHeighLight"
+                android:textSize="@dimen/_20"
+                tools:ignore="EllipsizeMaxLines" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+            <EditText
+                android:id="@+id/etRegPhoneNo"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40"
+                android:layout_marginBottom="@dimen/_04"
+                android:layout_weight="70"
+                android:background="@drawable/edittextlayer"
+                android:ellipsize="end"
+                android:hint="@string/username_hit"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10"
+                android:singleLine="true"
+                android:textColorHint="@color/colorHeighLight" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginTop="@dimen/_20"
+            android:background="@drawable/edittextlayer"
+            android:hint="@string/username_hit"
+            android:paddingLeft="@dimen/_10"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etPswd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40"
+            android:layout_marginBottom="@dimen/_04"
+            android:layout_marginTop="@dimen/_10"
+            android:background="@drawable/edittextlayer"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_10" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginTop="@dimen/_40"
+            android:background="@drawable/buttonstateslayer2_with_border"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+
+        <FrameLayout
+            android:id="@+id/flGoogleSignBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginTop="@dimen/_10"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:visibility="gone">
+            <!--Google Login layout -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageview_google_icon"
+                    android:layout_width="@dimen/_40"
+                    android:layout_height="@dimen/_30"
+                    android:layout_gravity="start"
+                    android:background="@android:color/white"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/google_icon" />
+
+                <TextView
+                    android:id="@+id/textview_sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_15"
+                    android:text="@string/google_sign_text"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginTop="@dimen/_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sign Up"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="Skip"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flLoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:visibility="gone">
+
+       <!-- <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_24"
+            android:layout_height="@dimen/_24"
+            android:layout_gravity="center"
+            android:src="@drawable/gallery_gif_loader" />-->
+
+    </FrameLayout>
+
+
+</FrameLayout>

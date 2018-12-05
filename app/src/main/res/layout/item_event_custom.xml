@@ -1,0 +1,162 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:foreground="@drawable/custom_bg"
+    android:clickable="true"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    app:cardUseCompatPadding="false"
+    app:cardCornerRadius="3dp">
+
+    <FrameLayout
+        android:background="@color/defaultColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:minHeight="200dp"
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/def_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+
+                android:layout_gravity="bottom"
+
+                android:layout_marginBottom="20dp"
+                android:background="@color/bg_desc_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="17dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/defaultColor"
+                                android:textSize="18sp"
+                                android:id="@+id/name"
+                                android:maxLines="1"
+                                android:ellipsize="marquee"
+                                android:text="Lorem ipsum dolor "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textColor="@color/defaultColor"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/upcoming"
+                    android:layout_margin="1dp"
+                    android:layout_gravity="right|top"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/defaultColor"
+                    android:background="@color/colorUpcomingEvent"
+                    android:text="@string/upcomingTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="start|top"
+            android:id="@+id/featured"
+            android:background="@color/colorFeatured"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/defaultColor"
+            android:gravity="center"
+            android:text="@string/featured"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/defaultColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>
+
+

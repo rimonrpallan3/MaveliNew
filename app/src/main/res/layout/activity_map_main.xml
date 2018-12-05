@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/content_my_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></fragment>
+
+            <LinearLayout
+                android:id="@+id/store_focus_layout"
+                android:background="@color/defaultColor"
+                android:minHeight="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+
+                            android:padding="10dp"
+                            android:layout_gravity="bottom"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                            <LinearLayout
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="start"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textColor="@color/defaultColorText"
+                                        android:textSize="18sp"
+                                        android:id="@+id/name"
+                                        android:maxLines="1"
+                                        android:ellipsize="marquee"
+                                        android:text="Lorem ipsum dolor "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/ratingLayout"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="start"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <RatingBar
+                                        android:clickable="false"
+                                        android:id="@+id/ratingBar2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:progressDrawable="@drawable/ratingbar"
+                                        android:isIndicator="true"
+                                        android:rating="4"
+                                        android:stepSize="0.5"
+                                        android:numStars="5"/>
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:id="@+id/rate"
+                                        android:layout_marginStart="5dp"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/defaultColorText"
+                                        android:text="4.5 Votes (565)"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/closeLayout"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_gravity="end"
+                        android:background="#7FFFFFFF"
+                        android:src="@drawable/ic_close_grey_600_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/loading_icon_manage" android:id="@+id/loading"/>
+
+    <!--<include layout="@layout/loading_icon_manage" android:id="@+id/loading"/>-->
+    <include layout="@layout/fragment_error_manage" android:id="@+id/error"/>
+    <include layout="@layout/fragment_empty_list_manage" android:id="@+id/empty"/>
+
+
+
+</LinearLayout>

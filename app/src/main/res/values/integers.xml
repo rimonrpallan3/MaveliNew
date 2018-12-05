@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="nearby">500</integer>
+    <integer name="radius_map">5000</integer>
+    <string name="radius_near_by">5000</string>
+</resources>

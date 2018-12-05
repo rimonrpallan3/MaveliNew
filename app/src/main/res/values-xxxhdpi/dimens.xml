@@ -1,0 +1,84 @@
+<resources>
+
+    <dimen name="_0.5">.3dp</dimen>
+    <dimen name="__04">8dp</dimen>
+    <dimen name="_04">4dp</dimen>
+    <dimen name="_06">7dp</dimen>
+    <dimen name="_08">9dp</dimen>
+    <dimen name="_10">11dp</dimen>
+    <dimen name="_12">12dp</dimen>
+    <dimen name="_14">16dp</dimen>
+    <dimen name="_15">14dp</dimen>
+    <dimen name="_16">18dp</dimen>
+    <dimen name="_18">18dp</dimen>
+    <dimen name="_20">19dp</dimen>
+    <dimen name="_22">22dp</dimen>
+    <dimen name="_24">24dp</dimen>
+    <dimen name="_27">27dp</dimen>
+    <dimen name="_30">34dp</dimen>
+    <dimen name="_40">45dp</dimen>
+    <dimen name="_50">60dp</dimen>
+    <dimen name="_56">63dp</dimen>
+    <dimen name="_60">68dp</dimen>
+    <dimen name="_65">72dp</dimen>
+    <dimen name="_70">70dp</dimen>
+    <dimen name="_80">85dp</dimen>
+    <dimen name="_85">90dp</dimen>
+    <dimen name="_90">95dp</dimen>
+    <dimen name="_100">100dp</dimen>
+    <dimen name="_110">110dp</dimen>
+    <dimen name="_120">128dp</dimen>
+    <dimen name="_140">135dp</dimen>
+    <dimen name="_145">160dp</dimen>
+    <dimen name="_150">170dp</dimen>
+    <dimen name="_130">145dp</dimen>
+    <dimen name="_160">180dp</dimen>
+    <dimen name="_180">200dp</dimen>
+    <dimen name="_200">220dp</dimen>
+    <dimen name="_220">240dp</dimen>
+    <dimen name="_300">280dp</dimen>
+    <dimen name="_350">390dp</dimen>
+    <dimen name="_384">396dp</dimen>
+    <dimen name="_400">400dp</dimen>
+
+    <dimen name="_250">250dp</dimen>
+    <dimen name="_260">260dp</dimen>
+
+    <dimen name="notification_title">20dp</dimen>
+    <dimen name="notification_sub_title">18dp</dimen>
+    <dimen name="notification_message">16dp</dimen>
+    <dimen name="notification_tick_height">30dp</dimen>
+    <dimen name="notification_tick_width">30dp</dimen>
+
+    <!-- Here is the text size for dynamically created range_seekbar's_seekbar-->
+    <dimen name="discover_filter_seekbar_textview_width">120sp</dimen>
+    <dimen name="discover_filter_seekbar_textview_hight">50sp</dimen>
+
+    <dimen name="image_resize_toolbar_icon">15dp</dimen>
+
+
+
+    <dimen name="gallery_pic_height">100dp</dimen>
+    <dimen name="album_gallery_pic_height">115dp</dimen>
+
+    <dimen name="christmas_splash_circle">145dp</dimen>
+    <dimen name="christmas_splash_santa">45dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- Nofication bar button -->
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+
+
+
+</resources>

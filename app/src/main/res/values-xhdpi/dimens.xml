@@ -1,0 +1,81 @@
+<resources>
+
+    <dimen name="_0.5">.3dp</dimen>
+    <dimen name="__04">4dp</dimen>
+    <dimen name="_04">4dp</dimen>
+    <dimen name="_06">6dp</dimen>
+    <dimen name="_08">8dp</dimen>
+    <dimen name="_10">10dp</dimen>
+    <dimen name="_12">14dp</dimen>
+    <dimen name="_14">14dp</dimen>
+    <dimen name="_15">15dp</dimen>
+    <dimen name="_16">16dp</dimen>
+    <dimen name="_18">18dp</dimen>
+    <dimen name="_20">21dp</dimen>
+    <dimen name="_24">24dp</dimen>
+    <dimen name="_27">27dp</dimen>
+    <dimen name="_30">30dp</dimen>
+    <dimen name="_40">40dp</dimen>
+    <dimen name="_50">50dp</dimen>
+    <dimen name="_56">56dp</dimen>
+    <dimen name="_60">60dp</dimen>
+    <dimen name="_65">65dp</dimen>
+    <dimen name="_70">70dp</dimen>
+    <dimen name="_80">72dp</dimen>
+    <dimen name="_85">85dp</dimen>
+    <dimen name="_90">90dp</dimen>
+    <dimen name="_100">100dp</dimen>
+    <dimen name="_110">110dp</dimen>
+    <dimen name="_120">130dp</dimen>
+    <dimen name="_145">140dp</dimen>
+    <dimen name="_150">150dp</dimen>
+    <dimen name="_130">100dp</dimen>
+    <dimen name="_160">160dp</dimen>
+    <dimen name="_180">170dp</dimen>
+    <dimen name="_200">200dp</dimen>
+    <dimen name="_220">220dp</dimen>
+    <dimen name="_300">300dp</dimen>
+    <dimen name="_350">350dp</dimen>
+    <dimen name="_384">384dp</dimen>
+    <dimen name="_400">400dp</dimen>
+    <dimen name="_140">125dp</dimen>
+    <dimen name="_11">11dp</dimen>
+    <dimen name="_45">45dp</dimen>
+    <dimen name="_250">250dp</dimen>
+    <dimen name="_260">260dp</dimen>
+
+    <dimen name="notification_title">17dp</dimen>
+    <dimen name="notification_sub_title">15dp</dimen>
+    <dimen name="notification_message">14dp</dimen>
+    <dimen name="notification_tick_height">30dp</dimen>
+    <dimen name="notification_tick_width">30dp</dimen>
+
+    <!-- Here is the text size for dynamically created range_seekbar's_seekbar-->
+    <dimen name="discover_filter_seekbar_textview_width">120sp</dimen>
+    <dimen name="discover_filter_seekbar_textview_hight">50sp</dimen>
+    <dimen name="image_resize_toolbar_icon">15dp</dimen>
+
+    <dimen name="gallery_pic_height">100dp</dimen>
+
+
+    <dimen name="christmas_splash_circle">130dp</dimen>
+    <dimen name="christmas_splash_santa">40dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- Nofication bar button -->
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+
+
+
+</resources>

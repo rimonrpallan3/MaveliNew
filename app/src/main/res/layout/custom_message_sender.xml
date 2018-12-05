@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/border_item_discussion_sender"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColorLink="#000"
+                android:clickable="true"
+                android:padding="5dp"
+                android:textSize="@dimen/size_msg_text"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/message"
+                android:textColor="#fff"
+                android:text="Hello Hello Hello Hello Hello Hello "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="end"
+            android:paddingTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:paddingEnd="4dp"
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:paddingStart="10dp"
+                android:text="n/a"
+                android:textColor="@color/colorGrayDefault"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:id="@+id/warr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_warning_red_500_18dp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

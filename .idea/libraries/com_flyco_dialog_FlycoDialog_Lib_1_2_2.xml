@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.flyco.dialog:FlycoDialog_Lib-1.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FlycoDialog_Lib-1.2.2.aar/4e51ecfb3c51af54185969f6b99f1b76/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FlycoDialog_Lib-1.2.2.aar/4e51ecfb3c51af54185969f6b99f1b76/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flyco.dialog/FlycoDialog_Lib/1.2.2/4661e0dc713d80999b8e41ce674daecf00d87173/FlycoDialog_Lib-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

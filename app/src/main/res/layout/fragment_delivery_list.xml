@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/content_my_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="3dp"
+                            app:cardUseCompatPadding="false">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp">
+
+
+                                <LinearLayout
+                                    android:id="@+id/filterLayoutBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center"
+                                    android:layout_marginRight="10dp"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:visibility="gone"
+                                        android:id="@+id/closeFilterTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="@string/filter_offers_layout_title_close_filter"
+                                        android:textColor="@color/iconColor"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/applyFiltersImg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="4dp"
+                                        android:src="@drawable/filter_offer"
+                                        android:text="filter" />
+
+
+                                    <TextView
+                                        android:id="@+id/applyFilters"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/filter_offers_btn_title"
+                                        android:textColor="@color/iconColor"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="@dimen/defaultTitleSize"
+                                    android:layout_marginRight="@dimen/arc_max_height"
+                                    android:text="@string/filter_offers_search_title"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+
+                    <include layout="@layout/filter_list_content" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/loading_icon_manage" />
+
+    <include
+        android:id="@+id/error"
+        layout="@layout/include_layout_mange_error" />
+
+    <include
+        android:id="@+id/empty"
+        layout="@layout/include_layout_mange_empty" />
+
+
+</LinearLayout>

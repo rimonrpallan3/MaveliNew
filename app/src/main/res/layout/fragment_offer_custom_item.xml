@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110"
+        android:layout_marginBottom="@dimen/_06"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_marginTop="@dimen/_10"
+        android:foreground="@drawable/custom_bg"
+        app:cardCornerRadius="@dimen/_04"
+        app:cardElevation="1dp">
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/faith_card_view_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/badge4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10"
+                android:layout_marginTop="@dimen/_04">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_image"
+                    android:layout_width="@dimen/_80"
+                    android:layout_height="@dimen/_70"
+                    app:cardCornerRadius="@dimen/_10"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="@dimen/_14">
+
+
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:elevation="@dimen/_10"
+                        android:src="@drawable/def_logo" />
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ivFeatured"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:elevation="@dimen/_10"
+                        android:src="@drawable/banner_featured" />
+
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_bg_top_to_bottom" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/badge_notification_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24"
+                    android:layout_alignRight="@id/frame_image"
+                    android:text="10"
+                    android:gravity="right"
+                    android:textColor="#FFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"/>
+
+
+
+
+
+
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_12"
+                android:layout_marginLeft="@dimen/_10"
+                android:layout_marginTop="@dimen/_14"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_08"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="First"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_04"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Second"
+                        android:textSize="@dimen/_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Third"
+                        android:textSize="@dimen/_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/offerPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Fourth"
+                        android:textStyle="bold"
+                        android:textColor="@color/iconColor"
+                        android:textSize="@dimen/_12" />
+
+                </LinearLayout>
+
+                <!--
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/offer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/_04"
+                                        android:ellipsize="end"
+                                        android:maxLines="3"
+                                        android:text="Fourth"
+                                        android:textSize="@dimen/_12" />
+
+                                    <FrameLayout
+                                        android:id="@+id/priceCutLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:visibility="visible"
+                                        android:maxLines="1">
+
+                                        <ImageView
+                                            android:id="@+id/offerPriceImgCut"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/price_cut_draw"/>
+
+                                        <TextView
+                                            android:id="@+id/offerMainPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:maxLines="1"
+                                            android:text="600"
+                                            android:textSize="@dimen/_12"
+                                            android:textColor="@color/iconColor"
+                                            android:textStyle="bold" />
+
+
+
+
+
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                -->
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_120"
+            android:layout_height="@dimen/_60"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/_10"
+            android:layout_marginRight="@dimen/_10">
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:id="@+id/priceCutLayout"
+                    android:layout_width="match_parent"
+                    android:layout_weight="50"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left|center"
+                    android:visibility="visible"
+                    android:maxLines="1">
+
+                    <ImageView
+                        android:id="@+id/offerPriceImgCut"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:paddingTop="@dimen/_08"
+                        android:paddingRight="@dimen/_08"
+                        android:src="@drawable/price_cut_draw"/>
+
+                    <TextView
+                        android:id="@+id/offerMainPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:layout_marginRight="@dimen/_04"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:text="600"
+                        android:textSize="@dimen/_12"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/offer"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/_04"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@color/iconColor"
+                    android:text="Fourth"
+                    android:textSize="@dimen/_12" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
